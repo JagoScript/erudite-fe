@@ -1,6 +1,9 @@
 import React from "react";
+import useStore from "../../store";
 
-const Input = ({ inputValue, setInputValue, handleSend }) => {
+const Input = ({ handleSend }) => {
+  const { inputValue, setInputValue } = useStore(); // Mengakses state dari Zustand
+
   return (
     <div className="flex w-full max-w-3xl bg-neutral-800 p-4 rounded-lg shadow-md border border-neutral-700 mt-4">
       <input

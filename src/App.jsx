@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Input from "./components/atoms/Input";
 import Header from "./components/organisms/Header";
 import CardList from "./components/organisms/CardList";
 import Footer from "./components/organisms/Footer";
+import useStore from "./store";
 
 const App = () => {
-  const [inputValue, setInputValue] = useState("");
+  const { inputValue, setInputValue } = useStore();
 
   const handleCardClick = (message) => {
     setInputValue(message);
@@ -14,18 +15,15 @@ const App = () => {
 
   const handleSend = () => {
     console.log("Pesan terkirim:", inputValue);
-    setInputValue(""); // Clear input after sending
+    setInputValue("");
   };
 
   return (
     <div className="h-screen bg-neutral-800 text-white flex flex-col items-center">
-      {/* Header */}
       <Header />
 
-      {/* Cards */}
       <CardList handleCardClick={handleCardClick} />
 
-      {/* Input */}
       <div className="mt-8 w-full flex justify-center">
         <Input
           inputValue={inputValue}
@@ -34,7 +32,6 @@ const App = () => {
         />
       </div>
 
-      {/* Footer Note */}
       <Footer />
     </div>
   );

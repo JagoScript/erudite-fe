@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../organisms/Header";
 import CardList from "../organisms/CardList";
+import Input from "../atoms/Input";
 import Footer from "../organisms/Footer";
 
 const MainTemplate = ({
