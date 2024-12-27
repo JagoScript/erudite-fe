@@ -1,6 +1,6 @@
 # Erudite AI Frontend
 
-This is the front-end interface for Erudite AI by Jagoscript, text chat/generation using Llama 3.2 Instruct finetuned by unsloth.
+This is the front-end interface for Erudite AI by Jagoscript, text chat/generation using Unsloth Llama 3.2 Instruct.
 
 ## Getting Started
 
