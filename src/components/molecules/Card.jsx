@@ -1,4 +1,4 @@
-import React from "react";
+
 import CardIcon from "../atoms/CardIcon";
 
 const Card = ({ icon, color, text, onClick }) => {

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
       >
-        Halo!, Erudite Disini. Ingin Tanya Apa?
+        Halo! Erudite Disini. Ingin Tanya Apa?
       </motion.h2>
     </header>
   );
