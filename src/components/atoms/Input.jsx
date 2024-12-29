@@ -1,7 +1,8 @@
 import useStore from "../../store";
+import { FaPaperPlane } from "react-icons/fa";
 
 const Input = ({ handleSend }) => {
-  const { inputValue, setInputValue } = useStore(); // Mengakses state dari Zustand
+  const { inputValue, setInputValue } = useStore();
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
@@ -20,10 +21,10 @@ const Input = ({ handleSend }) => {
         onKeyPress={handleKeyPress}
       />
       <button
-        className="ml-4 px-6 py-2 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:shadow-xl text-white rounded-lg shadow-lg transition"
+        className="ml-4 px-3 py-2 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:shadow-xl text-white rounded-full shadow-lg transition"
         onClick={handleSend}
       >
-        Kirim
+        <FaPaperPlane size={16} />
       </button>
     </div>
   );
