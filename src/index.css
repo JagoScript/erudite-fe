@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .chat-box::-webkit-scrollbar {
-  width: 0px; /* Hide the scrollbar */
+  width: 0px;
 }
 
 .chat-box {
