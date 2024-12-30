@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.chat-box::-webkit-scrollbar {
+  width: 0px;
+}
+
+.chat-box {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
