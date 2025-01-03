@@ -1,5 +1,7 @@
 # Erudite AI Frontend
 
+![Erudite Cropped](https://github.com/user-attachments/assets/8adabca1-ddd8-4384-9b3b-b530567f4350)
+
 This is the front-end interface for Erudite AI by Jagoscript, text chat/generation using Unsloth Llama 3.2 Instruct.
 
 ## Getting Started
