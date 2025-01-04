@@ -2,7 +2,7 @@
 
 ![Erudite Cropped](https://github.com/user-attachments/assets/8adabca1-ddd8-4384-9b3b-b530567f4350)
 
-This is the front-end interface for Erudite AI by Jagoscript, text chat/generation using Unsloth Llama 3.2 Instruct.
+This is the front-end interface for Erudite AI by Jagoscript, text chat/generation.
 
 ## Getting Started
 
@@ -51,5 +51,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Zustand](https://github.com/pmndrs/zustand)
-- [unsloth/Llama-3.2-1B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-bnb-4bit)
-- [Llama 3.2](https://huggingface.co/meta-llama/Llama-3.2-1B)
