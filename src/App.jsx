@@ -55,15 +55,13 @@ const App = () => {
     }
   };
 
-  // Scroll to the bottom when new messages are added
   useEffect(() => {
     if (chatBoxRef.current) {
-      // Add a small delay to ensure the DOM has rendered new messages
       setTimeout(() => {
         chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
-      }, 100); // Delay to make sure scroll happens after rendering
+      }, 100);
     }
-  }, [messages]); // Trigger on message change
+  }, [messages]);
 
   return (
     <div className="h-screen bg-neutral-800 text-white flex flex-col">
@@ -76,9 +74,9 @@ const App = () => {
         <div className="flex-1 overflow-hidden">
           <div className="h-full flex flex-col">
             <div className="flex-1 overflow-y-auto" ref={chatBoxRef}>
-              <ChatBox  
-                messages={messages} 
-                isLoading={isLoading} 
+              <ChatBox
+                messages={messages}
+                isLoading={isLoading}
                 aiProfilePic="src\assets\EruditeLogo.svg"
               />
             </div>
