@@ -76,7 +76,11 @@ const App = () => {
         <div className="flex-1 overflow-hidden">
           <div className="h-full flex flex-col">
             <div className="flex-1 overflow-y-auto" ref={chatBoxRef}>
-              <ChatBox messages={messages} isLoading={isLoading} />
+              <ChatBox  
+                messages={messages} 
+                isLoading={isLoading} 
+                aiProfilePic="src\assets\EruditeLogo.svg"
+              />
             </div>
           </div>
         </div>

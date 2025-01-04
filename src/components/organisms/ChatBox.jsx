@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-const ChatBox = ({ messages, isLoading }) => (
+const ChatBox = ({ messages, isLoading, aiProfilePic }) => (
   <div className="max-w-3xl mx-auto px-4 py-6 md:px-6">
     {messages.map((message, index) => (
       <motion.div
@@ -13,6 +13,13 @@ const ChatBox = ({ messages, isLoading }) => (
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3 }}
       >
+        {message.sender !== "You" && (
+          <img
+            src={aiProfilePic}
+            alt="AI Profile"
+            className="w-10 h-10 mt-[12px] rounded-full mr-2 p-1 border-[1px] border-[#878685]"
+          />
+        )}
         <div
           className={`bubble p-2 rounded-lg max-w-[80%] md:max-w-[70%] ${
             message.sender === "You"
@@ -34,9 +41,9 @@ const ChatBox = ({ messages, isLoading }) => (
       >
         <div className="bubble p-2 rounded-lg bg-neutral-700 text-white self-start">
           <div className="flex space-x-1">
-            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce"></div>
-            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce delay-200"></div>
-            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce delay-400"></div>
+            <div className="w-2 h-2 bg-[#878685] rounded-full animate-bounce"></div>
+            <div className="w-2 h-2 bg-[#878685] rounded-full animate-bounce delay-200"></div>
+            <div className="w-2 h-2 bg-[#878685] rounded-full animate-bounce delay-400"></div>
           </div>
         </div>
       </motion.div>
@@ -55,6 +62,7 @@ ChatBox.propTypes = {
     })
   ).isRequired,
   isLoading: PropTypes.bool.isRequired,
+  aiProfilePic: PropTypes.string.isRequired,
 };
 
 export default ChatBox;
