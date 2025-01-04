@@ -52,10 +52,9 @@ const ChatBox = ({ messages, isLoading, aiProfilePic }) => {
             {message.sender !== "You" && (
               <button
                 onClick={() => handleCopy(message.text)}
-                className="mt-2 text-sm text-[#878685] hover:text-neutral-400 flex items-center"
+                className="mt-2 mr-2 text-sm text-[#878685] hover:text-neutral-400 flex items-center"
               >
                 <FaRegCopy className="mr-1" />
-                Copy
               </button>
             )}
           </div>

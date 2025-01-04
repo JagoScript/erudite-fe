@@ -29,7 +29,7 @@ const App = () => {
 
     try {
       const response = await fetch(
-        "https://huge-pony-obliging.ngrok-free.app/generate",
+        "/api/generate",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
